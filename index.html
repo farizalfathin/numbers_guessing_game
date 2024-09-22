@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numbers Guessinggit</title>
+    <title>Numbers Guessing</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div>
-            <h1>Permainan Tebak Angka '123'</h1>
+            <h1>Permainan Tebak Angka</h1>
         </div>
-        <div></div>
     </header>
     <main>
         <section>
@@ -33,8 +32,22 @@
             <div class="session-stats">
                 <h2>Game Session Stats</h2>
                 <div class="session-stat-item">
-                    <h3>Jumlah Tebakan Salah:</h3>
-                    <h3 id="session-user-attempts-amount-field"></h3>
+                    <h4>Jumlah Tebakan Salah:</h4>
+                    <h1 id="session-user-attempts-amount-field"></h1>
+                </div>
+            </div>
+            <div class="total-stats">
+                <h2>Local Stats</h2>
+                <div>
+                    <div class="local-stat-item">
+                        <h4>Jumlah permainan yang berhasil dimenangkan:</h4>
+                        <h1 id="local-total-victory-field"></h1>
+                    </div>
+                    <div class="local-stat-item">
+                        <h4>Jumlah tebakan salah terbanyak sekali main:</h4>
+                        <h1 id="local-maximum-attempt-field"></h1>
+                    </div>
+                    <button class="button" id="destroy-data-button">Hapus semua data</button>
                 </div>
             </div>
         </section>
@@ -62,71 +75,7 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="total-stats">
-                <h2>Local Stats</h2>
-                <div>
-                    <div class="local-stat-item">
-                        <h3>Jumlah permainan yang berhasil dimenangkan:</h3>
-                        <h3 id="local-total-victory-field"></h3>
-                    </div>
-                    <div class="local-stat-item">
-                        <h3>Jumlah tebakan salah terbanyak sekali main:</h3>
-                        <h3 id="local-maximum-attempt-field"></h3>
-                    </div>
-                    <button class="button" id="destroy-data-button">Hapus semua data</button>
-                </div>
-            </div>
-        </section>
     </main>
-    <footer>
-
-    </footer>
-    <!-- <h1 align="center"></h1>
-    <div class="contents">
-      <div class="child-content total-stats" align="center">
-        <h2>Local Stats</h2>
-        <hr>
-        <div>
-          <div class="local-stat-item">
-            <h3>Jumlah permainan yang berhasil dimenangkan:</h3>
-            <h3 id="local-total-victory-field"></h3>
-          </div>
-          <div class="local-stat-item">
-            <h3>Jumlah tebakan salah terbanyak sekali main:</h3>
-            <h3 id="local-maximum-attempt-field"></h3>
-          </div>
-          <button class="button" id="destroy-data-button">Hapus semua data</button>
-        </div>
-      </div>
-      
-      <div class="child-content gameboard" align="center">
-        <h2>Game Board</h2>
-        <hr>
-        <div id="before-game-display">
-          <h3>Tekan tombol "Play" di bawah jika sudah siap</h3>
-          <button class="button" id="play-button">Bermain</button>
-        </div>
-        <div id="during-game-display" hidden>
-          <h3>Silahkan menebak angka!</h3>
-          <h3>Jawaban Anda:</h3>
-          <h1>"<u><span id="session-user-answer-field"></span></u>"</h1>
-          <button class="answer-button" id="answer-1-button">1</button>
-          <button class="answer-button" id="answer-2-button">2</button>
-          <button class="answer-button" id="answer-3-button">3</button>
-          <h3>"<span id="session-user-wrong-answer-field"></span>" bukanlah jawabannya...</h3><br><br>
-        </div>
-        <div id="after-game-display" hidden>
-          <h3>Selamat Tebakan Anda benar!</h3>
-          <h3>Jawabannya adalah: </h3>
-          <h1>"<span id="session-true-answer-field"></span>"</h1>
-          <h3><i></i>Refresh halaman ini untuk mencoba lagi</h3>
-        </div>
-      </div>
-      
-      
-    </div> -->
-     
-        <script src="main.js"></script>
-    </body>
+    <script src="main.js"></script>
+</body>
 </html>
